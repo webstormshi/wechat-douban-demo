@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/found/found",
+    "pages/learn/learn",
+    "pages/shop/shop",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff9f23",
+    "navigationBarTitleText": "得到",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#b0b0b0",
+    "selectedColor": "#ff9f23",
+    "backgroundColor": "#fafafa",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/found/found",
+        "iconPath": "images/found.png",
+        "selectedIconPath": "images/active_found.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/learn/learn",
+        "iconPath": "images/book.png",
+        "selectedIconPath": "images/active_book.png",
+        "text": "今日学习"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "iconPath": "images/shop.png",
+        "selectedIconPath": "images/active_shop.png",
+        "text": "已购"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/active_me.png",
+        "text": "我"
+      }]
+  }
+}

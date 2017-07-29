@@ -1,0 +1,104 @@
+<!--pages/found/found.wxml-->
+<!-- swiper组件做tab图片切换   -->
+
+<view class="dedao-found-container">
+  <view class="found-header">
+      <view  class="found__tabImg">
+        <!-- 轮播图模块 -->
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}">
+              <swiper-item>
+                  <image src="{{item}}" class="slide-image"/>
+              </swiper-item>
+            </block>
+        </swiper>
+      </view>
+        <!-- 搜索下载模块 -->
+        <view class="found__search">
+          <input type="text" class="search__input" placeholder="周六特惠日"/>
+          <!-- <view class="download"> -->
+            <image src="../../images/download.png" alt="下载"/>
+          <!-- </view> -->
+        </view>
+    </view>
+
+<!-- 区块导航模块 -->
+    <view class="cloumn-nav">
+      <view class="cloumn-item">
+        <image src="../../images/icon_ebook.png" alt="电子书"/>
+        <text class="cloumn-item__name">电子书</text>
+      </view>
+      <view class="cloumn-item">
+        <image src="../../images/icon_play.png" alt="每天听本书"/>
+        <text class="cloumn-item__name">每天听本书</text>
+      </view>
+      <view class="cloumn-item">
+        <image src="../../images/icon_mall.png" alt="商城"/>
+        <text class="cloumn-item__name">商城</text>
+      </view>
+      <view class="cloumn-item">
+        <image src="../../images/icon_ebook.png" alt="系列"/>
+        <text class="cloumn-item__series">系列</text>
+      </view>
+      <view class="cloumn-item">
+        <image src="../../images/icon_all.png" alt="全部"/>
+        <text class="cloumn-item__name">全部</text>
+      </view>
+    </view>
+
+    <!-- 驻场大神模块 -->
+    <view class="cloumn found-native">
+      <view class="cloumn-hd native-hd">
+        <text class="cloumn-hd__name">驻场大神</text>
+        <text class="native-hd__time">驻场时间：7.10-7.29</text>
+      </view>
+      <view class="native-intro">
+      <view class="native-intro__pic"></view>
+        <view class="native-course">
+            <text class="course-title">曾鸣·智能商业20讲</text>
+            <text class="course-speaker">曾鸣·阿里巴巴学术委员会主席</text>
+            <text class="update">今日更新：</text>
+            <text class="update-course">新起点|答疑</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 免费专区模块 -->
+    <view class="cloumn found-free">
+      <view class="cloumn-hd native-hd">
+        <text class="cloumn-hd__name">免费专区</text>
+        <text class="free-hd__time">连续播放</text>
+      </view>
+
+      <view class="speaker-info">
+      <view class="speaker-pic"></view>
+      <view class="speaker-course">
+        <text class="course__name">李翔知识内参</text>
+        <text class="course_all">查看全部 ></text>
+      </view>
+        <view class="course__list">
+          <view class="course-item">
+            <view class="course-play"><image src="https://staticcdn.igetget.com/mobile/dedao/dist/images/free/play.png"></image></view>
+            <text class="course-speaker">扎克伯格：最大的趋势是视频</text>
+          </view>
+
+            <view class="course-item">
+              <view class="course-play"><image src="https://staticcdn.igetget.com/mobile/dedao/dist/images/free/play.png"></image></view>
+                  <text class="course-speaker">管理：导致好员工离职的原因</text>
+            </view>
+
+            <view class="course-item">
+              <view class="course-play"><image src="https://staticcdn.igetget.com/mobile/dedao/dist/images/free/play.png"></image></view>
+                  <text class="course-speaker">要把时间浪费在非常好的事情上</text>
+            </view>
+
+            <view class="course-item">
+              <view class="course-play"><image src="https://staticcdn.igetget.com/mobile/dedao/dist/images/free/play.png"></image></view>
+              <text class="course-speaker">领导力就是断物与识人</text>
+            </view>
+
+        </view>
+      </view>
+    </view>
+
+</view>
