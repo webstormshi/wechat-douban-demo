@@ -1,0 +1,83 @@
+
+<view class="container">
+    <view class="session-search session-search-spacing">
+    <view class="search-input" bindtap="toast">
+             <input  class="search-placholder" placeholder="搜索电影" type="text"/>
+         </view>
+    </view>
+    <view class="page-session page-session-spacing">
+        <!--近期上映-->
+        <view class="session-header">
+        <view  class="session-header-title">近期上映</view>
+        <navigator url="/pages/comingSoon/comingSoon">
+        <view class="session-header-more" data-type-id="intheaters">更多></view>
+        </navigator>
+        </view>
+    </view>
+</view>
+<scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
+<!--  display: inline-block-->
+    <block wx:for="{{comingSoon}}" wx:key="">
+        <view class="scroll-view-item" >
+         <navigator url="/pages/detail/detail?id={{item.id}}">
+        <image class="movie-img" src="{{item.images.large}}"/>
+            <view class="movie-name">{{item.title}}</view>
+         <view class="movie-grade">
+                <view id="{{item.rating.average}}" class="commentStar" style="background-position-y:(10-{{item.rating.average}})*11px"></view>
+                <view id="movie-grade-value">{{item.rating.average}}</view></view>
+        </navigator>
+         </view>
+</block>
+</scroll-view>
+
+
+ <view class="page-session page-session-spacing">
+        <!--热门电影-->
+        <view class="session-header">
+        <view  class="session-header-title">热门电影</view>
+        <navigator url="/pages/inTheaters/inTheaters">
+            <view class="session-header-more" data-type-id="intheaters">更多></view> 
+          </navigator>
+        </view>
+</view>
+<scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
+<!--  display: inline-block-->
+<block wx:for="{{inTheaters}}" wx:key="">
+    <view class="scroll-view-item" >
+    <navigator url="/pages/detail/detail?id={{item.id}}">
+        <image class="movie-img" src="{{item.images.large}}"/>
+         <view class="movie-name"><text>{{item.title}}</text></view>
+         <view class="movie-grade">
+               <view id="{{item.rating.average}}" class="commentStar"></view>
+                <text id="movie-grade-value">{{item.rating.average}}</text></view>
+        </navigator>
+         </view>
+</block>
+</scroll-view>
+ <view class="page-session page-session-spacing">
+        <!--top250-->
+        <view class="session-header">
+        <view  class="session-header-title">top250</view>
+        <navigator url="/pages/top250/top250">
+          <view class="session-header-more" data-type-id="intheaters">更多></view>
+          </navigator>
+        </view>
+</view>
+<scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
+<!--  display: inline-block-->
+<block wx:for="{{top250}}" wx:key="">
+    <view class="scroll-view-item" >
+     <navigator url="/pages/detail/detail?id={{item.id}}">
+        <image class="movie-img" src="{{item.images.large}}"/>
+         <view class="movie-name"><text>{{item.title}}</text></view>
+         <view class="movie-grade">
+               <view id="{{item.rating.average}}" class="commentStar"></view>
+                <text id="movie-grade-value">{{item.rating.average}}</text></view>
+              </navigator>
+     </view>
+</block>
+</scroll-view>
+
+
+
+

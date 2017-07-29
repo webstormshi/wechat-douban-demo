@@ -1,0 +1,20 @@
+/* pages/video/video.wxss */
+.section {
+  width: 100%;
+}
+.section video {
+  width: 100%;
+}
+.btn-area {
+  text-align: center;
+  margin: 10px;
+}
+.btn-area button,.btn-area input {
+    margin: 10px;
+}
+.btn-area input{
+  height: 25px;
+  margin: 10px;
+  border: 1px solid rgb(146, 164, 164);
+  border-radius: 5px;
+}

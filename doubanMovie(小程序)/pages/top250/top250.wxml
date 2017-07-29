@@ -1,0 +1,43 @@
+<view class="container">
+  <view class="session-search session-search-spacing">
+    <view class="search-input" bindtap="toast">
+             <input  class="search-placholder" placeholder="搜索电影" type="text"/>
+         </view>
+    </view>
+  <scroll-view bindscrolltolower="lower" class="scroll-posts-list" scroll-y="true" style="height:400px">
+    <view class="comingSoon">
+      <block wx:for="{{top250}}" wx:key="">
+        <navigator url="/pages/detail/detail?id={{item.id}}">
+          <view class="movie-list">
+            <view class="movie-list-info" index="{{index}}">
+
+              <!--电影图片-->
+              <image class="movieimg" src="{{item.images.large}}" />
+              <view class="item-box">
+                <view class="userinfo">
+
+                  <!--电影标题-->
+                  <text class="movie-title">{{item.title}}</text>
+
+                  <!--电影年份-->
+                  <text class="time">{{item.year}}</text>
+                </view>
+
+                <!--电影评分-->
+                <view class="posts-title">
+                  <text>评分：{{item.rating.average}}</text>
+                </view>
+                 <!--电影导演-->
+                <view class="bar-info-item-number">导演：{{item.directors[0]['name']}}</view>
+
+                <!--电影主演-->
+                <view class="bar-info-item-number">
+                主演：{{item.casts[0].name}}{{item.casts[1].name}}</view>
+              </view>
+              </view>
+            </view>
+        </navigator>
+      </block>
+    </view>
+  </scroll-view>
+</view>

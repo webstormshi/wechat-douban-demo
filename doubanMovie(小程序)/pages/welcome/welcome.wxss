@@ -1,0 +1,68 @@
+.session-search{
+    /*border:1px solid red;*/
+    background-color: #42bd56;
+    padding: 20rpx 30rpx;
+}
+.search-input{
+    border-radius: 10px;
+    padding: 5rpx 20rpx;
+    text-align: center;
+    background-color: #fff;
+}
+
+.session-header{
+    padding: 20rpx;
+    margin: 10rpx 0rpx;
+    border-left: 10rpx solid #42bd56;
+    vertical-align: middle;
+}
+.session-header-title{
+    font-weight: 800;
+    font-size: 32rpx;
+    display: inline-block;
+    width: 115px;
+    float: left;
+}
+.session-header-more{
+    display: inline-block;
+    font-size: 28rpx;
+    float: right;
+    color: rgb(66, 189, 86)
+}
+.movie-img{
+    width: 230rpx;
+    height: 280rpx;
+}
+.scroll-view-item{
+    /*background: red;*/
+    width: 240rpx;
+    height: 350rpx;
+    display: inline-block;
+    /*border:1px solid yellow;*/
+    padding: 20rpx 6rpx;
+     overflow: hideen;
+}
+.movie-name{
+    font-size: 32rpx;
+    font-family: "微软雅黑";
+    color:black;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#movie-grade-value{
+    font-size: 28rpx;
+    line-height: 35px;
+    font-style: italic;
+    display: inline-block;
+}
+.commentStar{
+  width: 55px;
+  height: 11px;
+   line-height: 35px;
+   /* border: 1px solid red;  */
+  background-image:url('https://img3.doubanio.com/f/shire/b8f4c3672ef81106701071831e22422a745d3b74/pics/rating_icons/ic_rating_s.png');
+  /* margin: 10rpx 10rpx; */
+  background-position-x: 10px;
+  display: inline-block;
+}

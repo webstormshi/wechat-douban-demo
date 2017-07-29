@@ -1,0 +1,51 @@
+/* pages/search/list.wxss */
+.session-search{
+    /*border:1px solid red;*/
+    background-color: #42bd56;
+    padding: 20rpx 30rpx;
+}
+.search-input{
+    border-radius: 10px;
+    padding: 5rpx 20rpx;
+    text-align: center;
+    background-color: #fff;
+}
+.movie-list{
+    border-bottom: 5rpx solid rgb(247, 247, 247);
+}
+.session-header{
+    padding: 20rpx;
+    margin: 10rpx 0rpx;
+    border-left: 10rpx solid #42bd56;
+    vertical-align: middle;
+}
+.session-header-title{
+    font-weight: 800;
+    font-size: 32rpx;
+    display: inline-block;
+    width: 115px;
+    float: left;
+}
+.session-header-more{
+    display: inline-block;
+    font-size: 28rpx;
+    float: right;
+    color: rgb(66, 189, 86)
+}
+.search-infer{
+  margin: 50rpx auto;
+  font-size: 28rpx;
+  color: #fff;
+  z-index: 1;
+  display: none;
+}
+.movie-name {
+  border: 1px solid #fff;
+  width:100%;
+  padding: 5px 20rpx;
+  border-bottom: 2rpx solid #fff;
+  border-top: 2rpx solid #fff;
+  overflow: hidden;
+  height: 50rpx;
+   line-height: 50rpx; 
+}

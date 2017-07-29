@@ -1,0 +1,24 @@
+<view class=".container" >
+<view class="movieimg" bindtap="playTap">
+      <image src="{{details.images.large}}" alt="点击播放"></image>
+    </view>
+  <view class="detail-header">
+    <view class="movie-title">
+      <text>{{details.title}}</text>
+      <text style="color:red">{{details.year}}</text>
+    </view>
+    <view class="movieRating">评分：{{details.rating.average}}</view>
+      <view class="direcotinfo">
+        <text id="label">导演：</text>
+        <view class="movieDirectors" wx:for="{{directors}}" id="label">{{item.name}}</view>
+      </view>
+      <view class="castsinfo">
+    <text id="label">主演：</text>
+    <view class="movieCasts" wx:for="{{actors}}" id="label"> {{item.name}}\r\n</view>
+    </view>
+  </view>
+  <view class="movieSummary">
+       <view class="classname" style="font-weight:800"><p>剧情简介</p></view>
+        <p>{{details.summary}}</p>
+  </view>
+</view>

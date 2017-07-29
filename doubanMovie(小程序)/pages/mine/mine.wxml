@@ -1,0 +1,19 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+    <view class="login-header">
+        <view class="login-header-exit">
+           <button class="login-button" bindtap="doLogin" style="display:{{hiddenInfo}}">{{status}}</button>
+           <button class="login-button" bindtap="doLogout" style="display:{{displayInfo}}">{{status}}</button>
+        </view>
+        <view class="login-user-pic">
+             <image src="{{userText.photoURL}}"/>
+            <text class="login-username">{{userText.displayName}}</text>
+        </view>
+    </view>
+    <view class="myList" style="display:{{displayInfo}}">
+      <view class="title">我的中心</view>
+      <view class="myCellection"><text>我的收藏</text><image src="/imgs/collection.png"></image></view>
+      <view class="myHistory"><text>我的历史</text><image src="/imgs/history.png"></image></view>
+       <view class="myDownload"><text>我的下载</text><image src="/imgs/download.png"></image></view>
+    </view>
+</view>

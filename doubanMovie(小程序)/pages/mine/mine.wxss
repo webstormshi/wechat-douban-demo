@@ -1,0 +1,77 @@
+.container{
+    width: 100%;
+    background: rgb(251, 249, 254);
+}
+
+.login-header{
+    height: 400rpx;
+    background-color:rgb(66, 189, 86);
+    border: 1rpx solid rgb(66, 189, 86);
+}
+
+.login-user-pic image{
+    margin: 0 auto;
+    height: 200rpx;
+    width: 200rpx;
+    display:block;
+}
+.login-user-pic view{
+  border-radius: 50%;
+}
+
+.login-user-pic{
+  text-align: center;
+    width: 400rpx;
+    height: 300rpx;
+    margin: 20rpx auto;
+}
+.input-login{
+    border: 2rpx white solid;
+    color: white;
+
+}
+.login-username{
+    font-family: "微软雅黑";
+    color: white;
+    font-size: 32rpx;
+    display:block;
+    line-height: 30px;
+}
+
+.login-button{
+    width: 150rpx;
+    height: 80rpx;
+    line-height: 35px;
+    font-size: 40rpx;
+    background-color: rgb(66, 186, 86);
+    border: 4rpx solid white;
+    color: white;
+    margin-top:20rpx;
+    margin-right: 20rpx;
+}
+.myList view{
+  margin: 20rpx 0rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid rgb(247, 247, 247);
+  padding: 0rpx 30rpx;
+}
+.myList .title{
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 60rpx;
+  border-bottom: 5rpx solid rgb(247, 247, 247);
+}
+.myList view image{
+  width: 64rpx;
+  height: 64rpx;
+  line-height: 80rpx;
+  float: right;
+}
+.kind-list-item-hd {
+  padding:30rpx;
+  display:flex;
+  align-items:center;
+  transition:opacity .3s;
+
+}

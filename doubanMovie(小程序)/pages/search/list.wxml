@@ -1,0 +1,15 @@
+<!--pages/search/list.wxml-->
+<view class="session-search session-search-spacing">
+    <view class="search-input">
+      <input class="search-placholder" placeholder="搜索电影" type="text" bindinput="InputTap" />
+      <button type="sumbit"></button>
+    </view>
+  </view>
+  <view class="search-infer" style="display='{{inferIndex}}'">暂无搜索结果</view>
+  <view class="movieList" style="display='{{activeIndex}}'">
+    <block wx:for="{{movieList}}" wx:key="">
+        <navigator url="/pages/detail/detail?id={{item.id}}" class="movie-list">
+            <view class="movie-name">{{item.title}} {{item.rating.average}}</view>
+        </navigator>
+      </block>
+  </view>
