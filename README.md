@@ -8,7 +8,7 @@
 - 豆瓣开放平台数据APi接入
 
 ## 项目预览
-预览地址[http://upload-images.jianshu.io/upload_images/6825285-0a5ad1b8745c0c63.gif?imageMogr2/auto-orient/strip]
+![预览地址](http://upload-images.jianshu.io/upload_images/6825285-0a5ad1b8745c0c63.gif?imageMogr2/auto-orient/strip)
 
 ## 项目功能列表
 - 电影首页查看
